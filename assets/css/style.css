@@ -1,20 +1,26 @@
+/* Sets the box-sizing property to border-box for all elements given the asterisk, 
+values for padding and border are included in the element's total width and height calculation.
+Padding and margin are 0 for all elements on page. */
+
 * {
     box-sizing: border-box;
-    margin: 0;
     padding: 0;
+    margin: 0;
 }
+
+/* This sets the background of the web page body to a light gray.
+This color is seen around the blue boxes and the footer. */ 
 
 body {
     background-color: red;
 }
 
+/* This styles the header element that is the blue banner at the top of the page holding the website title and navigation bar.
+Padding of element is set to 20 along with various fonts and fallback fonts. */
+
 .header {
     padding: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: aliceblue;
-    color: black;
-} 
-
-.header h1 .seo {
-    color: #d9dcd6;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, 'sans-serif';
+    background-color: #2a607c;
+    color: #ffffff;
 }
