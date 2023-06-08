@@ -1,26 +1,101 @@
-/* Sets the box-sizing property to border-box for all elements given the asterisk, 
-values for padding and border are included in the element's total width and height calculation.
-Padding and margin are 0 for all elements on page. */
-
+/* Reset default margin and padding */
 * {
     box-sizing: border-box;
-    padding: 0;
     margin: 0;
-}
+    padding: 0;
+  }
 
-/* This sets the background of the web page body to a light gray.
-This color is seen around the blue boxes and the footer. */ 
-
+/* Body background color */
 body {
-    background-color: red;
+    background-color: white;
 }
 
-/* This styles the header element that is the blue banner at the top of the page holding the website title and navigation bar.
-Padding of element is set to 20 along with various fonts and fallback fonts. */
-
-.header {
+header {
+    
+}
+/* Header styles */
+  .header {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    color: black;
     padding: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, 'sans-serif';
-    background-color: #2a607c;
-    color: #ffffff;
+  }
+  
+  .header h1 {
+    margin: 0;
+  }
+  
+  .header nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .header nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .header nav ul li a {
+    color: black;
+    text-decoration: none;
+  }
+  
+  /* Hero section styles */
+.hero {
+    background-color: #f5f5f5;
+    text-align: center;
+    padding: 50px;
 }
+  
+.hero img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    margin-bottom: 20px;
+}
+  
+  /* Main section styles
+  main {
+    padding: 50px;
+  }
+  
+  section {
+    margin-bottom: 40px;
+  }
+  
+  section h2 {
+    margin: 0;
+  }
+  
+  section div {
+    margin-bottom: 20px;
+  }
+  
+  section img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
+  
+  /* Contact section styles */
+  .contact-main ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .contact-main ul li {
+    margin-bottom: 10px;
+  }
+  
+  /* Footer styles */
+  .footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .footer h3 {
+    margin: 0;
+  } */
