@@ -36,7 +36,7 @@ body {
 }
 
 .hero {
-    position: relative;
+    /* position: relative; */
     display: flex;
 }
 
@@ -50,18 +50,18 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
     position: absolute;
-    top: 50%;
-    left: 50%; 
+    top: 40%;
+    left: 30%; 
+    font-size: 50px;
 }
 
 .hero p {
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
-    flex-direction: column;
-    max-width: 50rem;
     position: absolute;
-    top: 56%;
-    left: 50%; 
+    top: 54%;
+    left: 30%; 
+    font-size:larger;
 }
 
 .img-prj1, .img-prj2, .img-prj3, .img-prj4, .img-prj5 {
