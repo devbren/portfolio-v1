@@ -121,7 +121,34 @@ body {
     object-fit: cover;
 }
 
-main {
+.content {
+    width: 75%;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.about, .project, .contact {
+    margin-bottom: 20px;
+    padding: 80px;
+    height: 300px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.about h2 {
+    color: cadetblue;
+}
+
+.about h3 {
+    color: black;
+    font-size: 30px;
+}
+
+.about p {
+    color: black;
+}
+
+
+/* main {
     padding: 100px;
 }
 
@@ -129,21 +156,19 @@ main h2 {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 30px;
     color: cadetblue;
+    display: flex;
 }
 
 main h3 {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 30px;
     color: black;
+    display: flex;
 }
 
 main p {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
-}
-
-.about {
-    float: left;
 }
 
 .content {
@@ -153,12 +178,21 @@ main p {
     display: flex;
 }
 
+.about {
+    float: left;
+}
+
+.projects {
+    display: flex;
+    position: absolute;
+}
+
 .img-prj1, .img-prj2, .img-prj3, .img-prj4, .img-prj5 {
-    height: 500px;
-    width: 800px;
+    height: 300px;
+    width: 500px;
     background-size: contain;
     background-position: center;
-}
+} */
 
 .footer h3 {
     padding: 30px;
