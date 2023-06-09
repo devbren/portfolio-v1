@@ -55,7 +55,7 @@ body {
     display: flex;
     position: absolute;
     top: 40%;
-    left: 30%; 
+    left: 27%; 
     font-size: 50px;
 }
 
@@ -64,19 +64,19 @@ body {
     display: flex;
     position: absolute;
     top: 54%;
-    left: 30%; 
+    left: 27%; 
     font-size:larger;
 }
 
 #headshot {
     background-image: url(assets/images/headshot.jpg);
     border: 3px solid #2d2e32;
-    height: 200px;
-    width: 200px;
+    height: 250px;
+    width: 250px;
     border-radius: 50%;
     display: flex;
-    top: 40%;
-    right: 30%; 
+    top: 38%;
+    right: 32%; 
     position: absolute;
     object-fit: cover;
 }
