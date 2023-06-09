@@ -10,41 +10,78 @@ body {
     background-color: white;
 }
 
-/* Header at the top of page with full name and nav bar */
 .header {
-    padding: 30px;
+    display: flex;
+    align-items: center;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: white;    
+    padding: 30px;
+}
+  
+#logo {
+    margin-right: 10px; /* Add some spacing between the logo and the navigation */
+}
+  
+#nav-bar ul {
+    list-style-type: none; /* Remove the default bullet points */
+    display: flex;
+    align-items: center;
+}
+  
+#nav-bar ul li {
+    margin-right: 10px; /* Add some spacing between the navigation links */
+}
+  
+#nav-bar ul li a {
+    text-decoration: none; /* Remove the underline from the links */
+    float: right;
+    font-weight: 600;
 }
 
-.header h1 {
+
+
+
+
+
+/* Header at the top of page with full name and nav bar */
+/* .header {
+    padding: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+}
+
+#logo #nav-bar {
+    justify-content: space-around;
+    align-items: baseline;
+} */
+
+/* .header h1 {
     display: inline-block;
     font-size: 25px;
     color: black;
     padding-left: 15px;
-}
+} */
 
-.header nav {
-    float: right;
-    font-family: Arial, Helvetica, sans-serif;
+/* .header nav {
+    /* float: right; */
+    /* font-family: Arial, Helvetica, sans-serif;
     font-size: 17px;
-    padding-top: 7px;
-}
+    padding-top: 5px;
+} */ 
 
-.header nav ul {
+/* .header nav ul {
     list-style-type: none;
 }
 
 .header nav ul li {
     display: inline-block;
-    margin: 0 10px auto;
-    padding-right: 15px;
-}
+    /* margin: 0 10px auto; */
+    /* padding-right: 15px;
+} */
 
-.header a {
+/* .header a {
     text-decoration: none;
     font-weight: 550;
-}
+} */
 
 .hero {
     position: relative;
