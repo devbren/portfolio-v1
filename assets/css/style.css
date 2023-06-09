@@ -33,10 +33,18 @@ body {
 }
   
 #nav-bar ul li a {
-    margin-right: 10px; /* Add some spacing between the navigation links */
+    margin-right: 25px; /* Add some spacing between the navigation links */
     text-decoration: none; /* Remove the underline from the links */
     float: right;
     font-weight: 600;
+}
+
+#nav-bar a:visited {
+    color: black;
+}
+
+#nav-bar a:hover {
+    color: cadetblue;
 }
 
 .hero {
@@ -48,6 +56,7 @@ body {
     height: 100%;
     width: 100%;
     object-fit: cover;
+    margin-bottom: -400px;
 }
 
 .hero h2{
@@ -75,15 +84,33 @@ body {
     width: 250px;
     border-radius: 50%;
     display: flex;
-    top: 38%;
+    top: 37%;
     right: 32%; 
     position: absolute;
     object-fit: cover;
 }
 
+main {
+    padding: 100px;
+}
+
+main h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 60px;
+}
+
+main p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.about {
+    display: flex;
+}
+
 .img-prj1, .img-prj2, .img-prj3, .img-prj4, .img-prj5 {
-    height: 800px;
-    width: 100%;
+    height: 500px;
+    width: 800px;
     background-size: contain;
     background-position: center;
 }
