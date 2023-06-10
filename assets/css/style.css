@@ -122,7 +122,7 @@ a {
 }
 
 a:hover {
-    color: cadetblue;
+    color: black;
 }
 
 .content {
@@ -131,8 +131,7 @@ a:hover {
  }
 
 .about-me-section, .work-section, .contact-me-section {
-    /* justify-content: flex-start;
-    display: flex; */
+    padding-bottom: 80px;
 }
 
 .about-me-title, .work-title, .contact-me-title {
@@ -169,8 +168,13 @@ a:hover {
 .about-me-content p {
     font-size: 18px;
     text-align: justify;
+    line-height: 23px;
 }
 
+.work-content h3 {
+    color: cadetblue;
+    margin: 0 0 1px;
+}
 
 .img-prj1,
 .img-prj2,
@@ -178,11 +182,12 @@ a:hover {
 .img-prj4,
 .img-prj5 {
     background-size: cover;
-    width: 47.5%;
-    height: 300px;
+    width: 700px;
+    height: 500px;
     margin-bottom: 2%;
     border: 2px solid;
     position: relative;
+    margin-top: 20px;
 }
 
 .img-prj1:hover,
