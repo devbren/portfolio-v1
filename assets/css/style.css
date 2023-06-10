@@ -171,9 +171,7 @@ a:hover {
 }
 
 .work-content {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+    flex-wrap: wrap;    
 }
 
 .work-content h3 {
@@ -181,10 +179,21 @@ a:hover {
     margin: 0 0 1px;
     margin-top: 50px;
 }
+  
+  .work-content {
+    flex: 4;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* align-items: center; */
+    /* margin: 0 auto; */
+    flex-direction: row;
+    width: 93%;
+  }
 
 .img-prj1 {
     background-size: cover;
-    width: 1150px;
+    width: 1120px;
     height: 750px;
     margin-bottom: 2%;
     border: 2px solid;
