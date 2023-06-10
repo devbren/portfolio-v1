@@ -10,6 +10,7 @@ body {
     background-color: white;
 }
 
+/* This code represents the white header at the top of the site nav bar */
 .header {
     display: flex;
     align-items: center;
@@ -18,21 +19,24 @@ body {
     justify-content: space-between;
     flex-wrap: wrap;
     position: sticky;
+    z-index: 9999;
 }
 
+/* This is my name displayed at the top left nav bar in black font that reads "Brenny Souza" */
 .header h1 {
-    font-size: 16px;
-    font-size: x-large;
+    font-size: 21px;
+    color: black;
 }
   
-#nav-bar ul {
+/* This code represents the nav bar links at the top right of the nav bar */
+.nav-bar ul {
     list-style-type: none;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
 }
   
-#nav-bar ul li a {
+.nav-bar ul li a {
     float: right;
     font-weight: 600;
     font-size: 16px;
@@ -41,11 +45,14 @@ body {
     margin: 15px;
 }
 
-#nav-bar a:visited {
+/* This code allows the nav bar links to remain black once clicked and accessed */
+.nav-bar a:visited {
     color: black;
 }
 
-#nav-bar a:hover {
+/* This code allows the nav bar links to glow cade blue as the user hovers over each
+link before clicking */
+.nav-bar a:hover {
     color: cadetblue;
 }
 
@@ -53,9 +60,12 @@ body {
     position: relative;
     display: flex;
     flex-wrap: flex;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 40%;
 }
 
-#hero-img {
+.hero-img {
     height: 100%;
     width: 100%;
     object-fit: cover;
@@ -63,16 +73,7 @@ body {
     flex-wrap: flex;
 }
 
-/* .hero h2{
-    font-family: Arial, Helvetica, sans-serif;
-    display: flex;
-    position: absolute;
-    top: 40%;
-    left: 27%; 
-    font-size: 50px;
-} */
-
-.hero h2{
+.hero h2 {
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
     position: absolute;
@@ -81,15 +82,6 @@ body {
     font-size: 40px;
     flex-wrap: flex;
 }
-
-/* .hero p {
-    font-family: Arial, Helvetica, sans-serif;
-    display: flex;
-    position: absolute;
-    top: 54%;
-    left: 27%; 
-    font-size:larger;
-} */
 
 .hero p {
     font-family: Arial, Helvetica, sans-serif;
@@ -101,21 +93,7 @@ body {
     flex-wrap: wrap;
 }
 
-/* #headshot {
-    background-image: url(assets/images/headshot.jpg);
-    border: 3px solid #2d2e32;
-    height: 250px;
-    width: 250px;
-    border-radius: 50%;
-    display: flex;
-    top: 37%;
-    right: 32%; 
-    position: absolute;
-    object-fit: cover;
-} */
-
-#headshot {
-    background-image: url(assets/images/headshot.jpg);
+.headshot {
     border: 3px solid #2d2e32;
     height: 200px;
     width: 200px;
@@ -128,53 +106,102 @@ body {
     flex-wrap: wrap;
 }
 
-/* main .projects {
-    display: flex;
-    flex-wrap: flex;
-} */
-
-.content {
-    display: flex; 
-    flex-wrap: wrap;
-    align-items: center;
-    margin: 0 auto 0 auto;
-}
-
-.about-me {
+/* .about-me, .work, .contact-me {
     justify-content: flex-start;
     display: flex;
+} */
+
+.about-section, .work-section, .contact-me-section {
+    display: flex;
+    justify-content: flex-start;
 }
 
-.about-me-title {
+/* .about-me-title {
+  font-size: 25px;
+  color: black;
+  margin: 0;
+  padding-right: 15px;
+  width: 15%;
+  text-align: right;
+  border-right: black solid 3px;
+  font-family: Arial, Helvetica, sans-serif;
+} */
+
+/* .about-me-title {
+  font-size: 25px;
+  color: black;
+  margin: 0;
+  padding-right: 15px;
+  width: 15%;
+  text-align: left; /* Updated to align left */
+  /* border-right: black solid 3px;
+  font-family: Arial, Helvetica, sans-serif;
+} */
+
+.about-me-title, .work-title, .contact-me-title {
+    font-size: 20px;
+    color: black;
+    margin: 100px;
+    padding-right: 55px;
+    text-align: left;
+    border-right: black solid 3px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 100px;
+}
+
+/* .about-me-content {
+  font-size: 16px;
+  color: black;
+  padding: 0 50px;
+  text-align: justify;
+  font-family: Arial, Helvetica, sans-serif;
+} */
+
+/* .about-me-content {
+  font-size: 16px;
+  color: black;
+  padding: 0 0 0 15px; /* Updated padding to create space on the left
+  flex-grow: 1; Added to allow content to fill remaining space
+  font-family: Arial, Helvetica, sans-serif;
+} */
+
+.about-me-content, .contact-me-content {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
     justify-content: flex-end;
-    font-size: 25px;
+    font-size: 16px;
     color: black;
-    margin: 0 auto 0 auto;
-    padding-right: 15px;
-    width: 15%;
-    text-align: end;
-    border-right: black solid 3px;
-}
-
-.about-me-content {
-    padding: 50px;
-}
-
-/* This code represents each header in
-the main section of the body and spaces them out in order
-to add space for each content in each section. It also adds space around the elements. 
-Headers in blue. THIS IS THE PARENT*/
-
-.about-me, .work, .contact-me {
-    margin-bottom: 20px;
-    padding: 100px;
-    height: 500px;
     font-family: Arial, Helvetica, sans-serif;
-    /* display: flex;
-    flex-direction: row; */
+    /* padding: 50px; */
+    padding: 60px;
+    flex-grow: 1;
 }
+
+.contact-me-content ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+  
+.contact-me-content ul li a {
+    float: right;
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+    margin: 15px;
+}
+
+
+/* MIGHT DELETER LATER */
+/* .about-me-content, .contact-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto 0 auto;
+} */
 
 /* END HERE */
 
@@ -224,5 +251,7 @@ Headers in blue. THIS IS THE PARENT*/
     text-align: center;    
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
+    clear: both;
+    margin-top: 100px;
 }
 
