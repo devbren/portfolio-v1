@@ -136,7 +136,7 @@ a:hover {
 }
 
 .about-me-title, .work-title, .contact-me-title {
-    font-size: 15px;
+    font-size: 25px;
     color: black;
     margin: 100px;
     padding-right: 55px;
@@ -147,13 +147,17 @@ a:hover {
 
 .content {
     flex-wrap: wrap;
-    display: inline-block;
     padding-left: 50px;
     padding-top: 50px;
 }
 
 .about-me-content, .work-content, .contact-content {
     padding-left: 100px;
+}
+
+.about-me-content {
+    display: block;
+    padding-right: 480px;
 }
 
 .img-prj1,
@@ -177,11 +181,15 @@ a:hover {
   opacity: 50%;
 }
 
-.contact-content ul{
+.contact-content ul {
     list-style-type: none;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+}
+
+.contact-content ul li a {
+    word-spacing: 50px;
 }
 
 .footer h3 {
@@ -192,208 +200,3 @@ a:hover {
     clear: both;
     margin-top: 100px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* .about-me, .work, .contact-me {
-    justify-content: flex-start;
-    display: flex;
-} */
-
-/* GIL'S CODE BELOW HERE. EDIT IT AND REVISE WHERE NEEDED */
-
-/* KEEP THIS CODE */
-/* .about-section, .work-section, .contact-me-section {
-    display: flex;
-    justify-content: flex-start;
-} */
-
-
-
-
-
-/* .about-me-title {
-  font-size: 25px;
-  color: black;
-  margin: 0;
-  padding-right: 15px;
-  width: 15%;
-  text-align: right;
-  border-right: black solid 3px;
-  font-family: Arial, Helvetica, sans-serif;
-} */
-
-/* .about-me-title {
-  font-size: 25px;
-  color: black;
-  margin: 0;
-  padding-right: 15px;
-  width: 15%;
-  text-align: left; /* Updated to align left */
-  /* border-right: black solid 3px;
-  font-family: Arial, Helvetica, sans-serif;
-} */
-
-
-
-/* KEEP THIS CODE */
-
-/* .about-me-title, .work-title, .contact-me-title {
-    font-size: 20px;
-    color: black;
-    margin: 100px;
-    padding-right: 55px;
-    text-align: left;
-    border-right: black solid 3px;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-top: 100px;
-} */
-
-
-
-
-
-
-/* .about-me-content {
-  font-size: 16px;
-  color: black;
-  padding: 0 50px;
-  text-align: justify;
-  font-family: Arial, Helvetica, sans-serif;
-} */
-
-/* .about-me-content {
-  font-size: 16px;
-  color: black;
-  padding: 0 0 0 15px; /* Updated padding to create space on the left
-  flex-grow: 1; Added to allow content to fill remaining space
-  font-family: Arial, Helvetica, sans-serif;
-} */
-
-
-
-
-
-
-/* KEEP THIS CODE */
-/* .about-me-content, .contact-me-content {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: flex-end;
-    font-size: 16px;
-    color: black;
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 50px;
-    padding: 60px;
-    flex-grow: 1;
-} */
-
-
-
-
-
-
-/* KEEP THIS CODE */
-/* .contact-me-content ul {
-    list-style-type: none;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-} */
-
-/* KEEP THIS CODE */
-/* .contact-me-content ul li a {
-    float: right;
-    font-size: 16px;
-    color: black;
-    text-decoration: none;
-    margin: 15px;
-} */
-
-
-
-
-
-
-
-/* MIGHT DELETER LATER */
-/* .about-me-content, .contact-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    margin: 0 auto 0 auto;
-} */
-
-/* END HERE */
-
-/* .img-prj1 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 500px;
-    width: 800px;
-    z-index: 3;
-  }
-  
-  .img-prj2, .img-prj3, .img-prj4, .img-prj5 {
-    position: absolute;
-    bottom: 0;
-    height: 300px;
-    width: 500px;
-    z-index: 2;
-  }
-  
-  .img-prj3 {
-    left: 200px;
-  }
-  
-  .img-prj4 {
-    right: 200px;
-  }
-  
-  .img-prj5 {
-    right: 400px;
-  }
-  
-  .img-prj2 {
-    left: 400px;
-  } */
-
-/* .img-prj1, .img-prj2, .img-prj3, .img-prj4, .img-prj5 {
-    height: 300px;
-    width: 500px;
-    background-size: contain;
-    background-position: center;
-    position:relative;
-} */
-
-
-
-
-
-
-
-/* THIS CODE BELOW YOU KEEP AND UNCOMMENT LATER */
-/* .footer h3 {
-    padding: 30px;
-    text-align: center;    
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    clear: both;
-    margin-top: 100px;
-} */
-
