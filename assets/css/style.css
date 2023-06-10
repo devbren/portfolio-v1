@@ -131,8 +131,9 @@ a:hover {
  }
 
 .about-me-section, .work-section, .contact-me-section {
-    padding-bottom: 80px;
+    padding-bottom: 50px;
 }
+
 
 .about-me-title, .work-title, .contact-me-title {
     font-size: 25px;
@@ -171,7 +172,8 @@ a:hover {
 }
 
 .work-content {
-    flex-wrap: wrap;    
+    flex-wrap: wrap; 
+    margin: 0 -40px ;
 }
 
 .work-content h3 {
@@ -214,6 +216,11 @@ a:hover {
     margin-top: 20px;
 }
 
+.work-content {
+    margin-top: -50px;
+}
+
+
 .img-prj1:hover,
 .img-prj2:hover,
 .img-prj3:hover,
@@ -241,3 +248,14 @@ a:hover {
     clear: both;
     margin-top: 100px;
 }
+
+@media screen and (max-width: 768px) {
+    section, 
+    .my-projects, 
+    .left-side-content
+    {
+      padding: 30px 15px;
+      flex-direction: column;
+      width: 100%;
+    }
+  }
