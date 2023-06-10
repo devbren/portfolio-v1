@@ -106,15 +106,108 @@ link before clicking */
     flex-wrap: wrap;
 }
 
+h2, h3, h4{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+p, a {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+a {
+    /* text-decoration: none; */
+}
+
+a:hover {
+    color: cadetblue;
+}
+
+.content {
+    flex-wrap: flex;
+    display: block;
+ }
+
+.about-me-section, .work-section, .contact-me-section {
+    justify-content: flex-start;
+    display: flex;
+}
+
+.about-me-title, .work-title, .contact-me-title {
+    font-size: 20px;
+    color: black;
+    margin: 100px;
+    padding-right: 55px;
+    text-align: left;
+    border-right: black solid 3px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 100px;
+}
+
+.content, .about-me-section {
+    flex-wrap: wrap;
+    display: inline-block;
+}
+
+.img-prj1,
+.img-prj2,
+.img-prj3,
+.img-prj4,
+.img-prj5 {
+    background-size: cover;
+    width: 47.5%;
+    height: 300px;
+    margin-bottom: 2%;
+    border: 3px solid;
+    position: relative;
+}
+
+.img-prj1:hover,
+.img-prj2:hover,
+.img-prj3:hover,
+.img-prj4:hover,
+.img-prj5:hover {
+  opacity: 50%;
+}
+
+.contact-content ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* .about-me, .work, .contact-me {
     justify-content: flex-start;
     display: flex;
 } */
 
-.about-section, .work-section, .contact-me-section {
+/* GIL'S CODE BELOW HERE. EDIT IT AND REVISE WHERE NEEDED */
+
+/* KEEP THIS CODE */
+/* .about-section, .work-section, .contact-me-section {
     display: flex;
     justify-content: flex-start;
-}
+} */
+
+
+
+
 
 /* .about-me-title {
   font-size: 25px;
@@ -138,7 +231,11 @@ link before clicking */
   font-family: Arial, Helvetica, sans-serif;
 } */
 
-.about-me-title, .work-title, .contact-me-title {
+
+
+/* KEEP THIS CODE */
+
+/* .about-me-title, .work-title, .contact-me-title {
     font-size: 20px;
     color: black;
     margin: 100px;
@@ -147,7 +244,12 @@ link before clicking */
     border-right: black solid 3px;
     font-family: Arial, Helvetica, sans-serif;
     margin-top: 100px;
-}
+} */
+
+
+
+
+
 
 /* .about-me-content {
   font-size: 16px;
@@ -165,7 +267,13 @@ link before clicking */
   font-family: Arial, Helvetica, sans-serif;
 } */
 
-.about-me-content, .contact-me-content {
+
+
+
+
+
+/* KEEP THIS CODE */
+/* .about-me-content, .contact-me-content {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -173,25 +281,37 @@ link before clicking */
     font-size: 16px;
     color: black;
     font-family: Arial, Helvetica, sans-serif;
-    /* padding: 50px; */
+    padding: 50px;
     padding: 60px;
     flex-grow: 1;
-}
+} */
 
-.contact-me-content ul {
+
+
+
+
+
+/* KEEP THIS CODE */
+/* .contact-me-content ul {
     list-style-type: none;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-}
-  
-.contact-me-content ul li a {
+} */
+
+/* KEEP THIS CODE */
+/* .contact-me-content ul li a {
     float: right;
     font-size: 16px;
     color: black;
     text-decoration: none;
     margin: 15px;
-}
+} */
+
+
+
+
+
 
 
 /* MIGHT DELETER LATER */
@@ -246,12 +366,19 @@ link before clicking */
     position:relative;
 } */
 
-.footer h3 {
+
+
+
+
+
+
+/* THIS CODE BELOW YOU KEEP AND UNCOMMENT LATER */
+/* .footer h3 {
     padding: 30px;
     text-align: center;    
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
     clear: both;
     margin-top: 100px;
-}
+} */
 
