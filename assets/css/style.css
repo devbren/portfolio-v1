@@ -155,10 +155,22 @@ a:hover {
     padding-left: 100px;
 }
 
+.about-subtitle {
+    font-size: 26px;
+    font-weight: bold;
+    color: cadetblue;
+}
+
 .about-me-content {
     display: block;
     padding-right: 480px;
 }
+
+.about-me-content p {
+    font-size: 18px;
+    text-align: justify;
+}
+
 
 .img-prj1,
 .img-prj2,
