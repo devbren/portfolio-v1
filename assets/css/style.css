@@ -5,7 +5,7 @@
     padding: 0;
   }
 
-/* Body background color */
+/* This code represents the body background color of entire webpage*/
 body {
     background-color: white;
 }
@@ -16,27 +16,29 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     padding: 30px;
     justify-content: space-between;
+    flex-wrap: wrap;
+    position: sticky;
 }
 
 .header h1 {
+    font-size: 16px;
     font-size: x-large;
 }
   
-#logo {
-    margin-right: 10px; /* Add some spacing between the logo and the navigation */
-}
-  
 #nav-bar ul {
-    list-style-type: none; /* Remove the default bullet points */
+    list-style-type: none;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 }
   
 #nav-bar ul li a {
-    margin-right: 25px; /* Add some spacing between the navigation links */
-    text-decoration: none; /* Remove the underline from the links */
     float: right;
     font-weight: 600;
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+    margin: 15px;
 }
 
 #nav-bar a:visited {
@@ -48,8 +50,9 @@ body {
 }
 
 .hero {
-    /* position: relative; */
+    position: relative;
     display: flex;
+    flex-wrap: flex;
 }
 
 #hero-img {
@@ -57,6 +60,7 @@ body {
     width: 100%;
     object-fit: cover;
     margin-bottom: -260px;
+    flex-wrap: flex;
 }
 
 /* .hero h2{
@@ -75,6 +79,7 @@ body {
     top: 45%;
     left: 25%; 
     font-size: 40px;
+    flex-wrap: flex;
 }
 
 /* .hero p {
@@ -90,9 +95,10 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
     position: absolute;
-    top: 60%;
+    top: 53%;
     left: 25%; 
-    font-size: medium;
+    font-size: 22px;
+    flex-wrap: wrap;
 }
 
 /* #headshot {
@@ -115,46 +121,59 @@ body {
     width: 200px;
     border-radius: 50%;
     display: flex;
-    top: 41%;
+    top: 35%;
     right: 32%; 
     position: absolute;
     object-fit: cover;
+    flex-wrap: wrap;
 }
+
+/* main .projects {
+    display: flex;
+    flex-wrap: flex;
+} */
 
 .content {
-    width: 75%;
-    display: inline-block;
-    margin-left: 20px;
+    display: flex; 
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0 auto 0 auto;
 }
 
-.about, .projects, .contact {
+.about-me {
+    justify-content: flex-start;
+    display: flex;
+}
+
+.about-me-title {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    font-size: 25px;
+    color: black;
+    margin: 0 auto 0 auto;
+    padding-right: 15px;
+    width: 15%;
+    text-align: end;
+    border-right: black solid 3px;
+}
+
+.about-me-content {
+    padding: 50px;
+}
+
+/* This code represents each header in
+the main section of the body and spaces them out in order
+to add space for each content in each section. It also adds space around the elements. 
+Headers in blue. THIS IS THE PARENT*/
+
+.about-me, .work, .contact-me {
     margin-bottom: 20px;
-    padding: 80px;
-    height: 300px;
+    padding: 100px;
+    height: 500px;
     font-family: Arial, Helvetica, sans-serif;
-}
-
-.about h2, .projects h2, .contact h2 {
-    color: cadetblue;
-}
-
-.about h3, .projects h3 {
-    color: black;
-    font-size: 30px;
-}
-
-.about p, .projects p, .contact p {
-    color: black;
-}
-
-.projects {
-    display: flex;
-    position: absolute;
-}
-
-.contact {
-    display: flex;
-    position: absolute;
+    /* display: flex;
+    flex-direction: row; */
 }
 
 /* END HERE */
@@ -199,46 +218,6 @@ body {
     background-position: center;
     position:relative;
 } */
-
-
-/* main {
-    padding: 100px;
-}
-
-main h2 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 30px;
-    color: cadetblue;
-    display: flex;
-}
-
-main h3 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 30px;
-    color: black;
-    display: flex;
-}
-
-main p {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
-}
-
-.content {
-    width: 75%;
-    display: inline-block;
-    margin-left: 30px;
-    display: flex;
-}
-
-.about {
-    float: left;
-}
-
-.projects {
-    display: flex;
-    position: absolute;
-}
 
 .footer h3 {
     padding: 30px;
