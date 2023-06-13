@@ -2,16 +2,7 @@
 Personal portfolio containing information needed for potential employers. Features about me section, language proficiency, projects, and contact. 
 
 ## Description
-I have been tasked by a marketing company to access their website code and refactor it, improving its accessibility. 
-
-A few things that were revised as per instructions:
-- "Cleaned up" code in both html and css files
-    - Includes organization and simplifying of css selectors
-- HTML code revised to be more semantic for better search engine optimization
-- HTML headings attributes put in sequential order
-- All images in html code were given an alt attribute
-- Nav bar includes three links with its own designation on main section of webpage. However, one link was fixed since it    was not working at first ("S.E.O"). Issue has been submitted, fixed, and closed
-- A title was added to the html head section so that viewers can see the name of the company on webpage tab
+This is version 1 of my developer portfolio in which I lay the foundation of what I would like to one day soon present to future employers. This website advocates my personal work, style, and skills as a developer through the power of a minimalist approach and its ability to get "straight to the point." The page feautes everything I would desire for my future employer to know: who I am, the best work I have done, my resume, and how to get in contact with me. I am eager to continue adding onto this site as the months go by and as my knowledge grows more and more as a developer. I soon hope to become a full stack developer ready to take on the challenge of helping businesses and clients acheive their goals and aspirations through the development of modern, functional, and accesible, state-of-the-art software and applications. 
 
 ## Installation
 This website can be deployed using github pages link.
@@ -21,17 +12,17 @@ Information on how to do this can be found here:
 https://dev.to/github/how-to-host-your-first-site-for-free-on-github-pages-45ob
 
 ## Usage 
-When you open this website, a landing page appears.
-The only functional parts of this website are the three links in the headers nav bar.
-You may click on any and it will direct you to its corresponding section in the main section of the body. Each link is an important factor of the business and helps readers understand what Horiseon offers as a business to its clients. 
+When you open this website, a landing page appears for my 1st version of my developer portfolio.
+The only functional parts of this website are the nav bar links, contact links, and repository links of work, each directing users to their appropriate locations. Each link is an important factor of the website and helps readers gain more knowledge, understanding, and context of my capabilites as an aspiring software developr. 
 
-![Alt text](assets/images/horiseoncapture.png)
+![Alt text](assets/images/portfoliov1screenshot.png)
 
 Link to repo:
-https://github.com/brennysouza/module-1-challenge
+https://github.com/brennysouza/portfolio-v1
 
 Link to deployed site:
-https://brennysouza.github.io/module-1-challenge/
+https://brennysouza.github.io/portfolio-v1/
+
 
 ## Credits
 N/A
