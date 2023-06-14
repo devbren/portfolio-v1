@@ -133,21 +133,22 @@ an underline or not. In this case, it DOES NOT have an underline since it is set
 a {
     text-decoration: none;
 }
-/* This code  */
-a:hover {
-    color: black;
-}
 
+/* This code sets the flex for the entire for the entire main section in the html body 
+that holds the content such as about me, work, and contact. Padding is also added between certain elements giving more space,
+minimizing certain sections from "getting in the way" */
 .content {
     flex-wrap: flex;
     display: block;
+    padding-left: 50px;
+    padding-top: 50px;
  }
-
+/* This code adds padding between each section found in the mains section i.e. about me, work, contact */
 .about-me-section, .work-section, .contact-me-section {
     padding-bottom: 50px;
 }
 
-
+/* This code sets the styling for each main section title such as size and color.  */
 .about-me-title, .work-title, .contact-me-title {
     font-size: 25px;
     color: black;
@@ -156,56 +157,49 @@ a:hover {
     text-align: left;
     font-family: Arial, Helvetica, sans-serif;
 }
-
-.content {
-    flex-wrap: wrap;
-    padding-left: 50px;
-    padding-top: 50px;
-}
-
+/* This code shifts all the content in each main section inward toward the center without allowing the elements to align all to
+the left side of the page. This allows for differentiation and dynamics between main section titles and main section content. */
 .about-me-content, .work-content, .contact-content {
     padding-left: 100px;
 }
-
+/* This is the subtitle found in the about me section that reads "hi, there." */
 .about-subtitle {
     font-size: 26px;
     font-weight: bold;
     color: cadetblue;
 }
-
+/* This code aligns the paragraph in the about me section to be blocked and the padding prevents text from running off to the right
+side of the screen. This ensures all text stays within the same area and is blocked for aesthetic and practical reasons.  */
 .about-me-content {
     display: block;
     padding-right: 480px;
 }
-
+/* This code sets the font size, the line height between each sentence, as well as gives both paragraphs that blocked look. */
 .about-me-content p {
     font-size: 18px;
     text-align: justify;
     line-height: 23px;
 }
-
+/* This code allows properties to wrap on multiple lines. The margin aligns the images toward the desired area for better alignment
+with other elements. Space around adds space between the images. Flex row sets the images to be displayed in rows. */
 .work-content {
     flex-wrap: wrap; 
-    margin: 0 -40px ;
+    margin: 0 -25px ;
+    flex: 4;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 93%;
+    margin-top: -50px;
 }
-
+/* This code sets the color and font size for the work titles given for each project. These titles are not the languages used for
+said projects. They are the titles in cadet blue. The maring adds a bit of space between the titles and program languages.*/
 .work-content h3 {
     color: cadetblue;
     margin: 0 0 1px;
     margin-top: 50px;
 }
-  
-.work-content {
-    flex: 4;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    /* align-items: center; */
-    /* margin: 0 auto; */
-    flex-direction: row;
-    width: 93%;
-}
-
+/* This is the code for the first main project displayed in the works section.*/
 .img-prj1 {
     background-size: cover;
     width: 1120px;
@@ -215,7 +209,7 @@ a:hover {
     position: relative;
     margin-top: 20px;
 }
-
+/* These are the images that follow. Four smaller projects displayed and this code sets its sizing. */
 .img-prj2,
 .img-prj3,
 .img-prj4,
@@ -228,20 +222,18 @@ a:hover {
     position: relative;
     margin-top: 20px;
 }
-
-.work-content {
-    margin-top: -50px;
-}
-
-
+/* This code allows a hover for the images and makes it interactive, allowing users to know that its functional. The hover color
+will be indian red to match color scheme. */
 .img-prj1:hover,
 .img-prj2:hover,
 .img-prj3:hover,
 .img-prj4:hover,
 .img-prj5:hover {
   opacity: 50%;
+  color: indianred;
 }
-
+/* This is the list for the contact methods found under the contact me section. It removes the bullets points of the
+unordered list, and center them all on one line. */
 .contact-content ul {
     list-style-type: none;
     display: flex;
@@ -249,24 +241,27 @@ a:hover {
     flex-wrap: wrap;
     margin-left: -12px;
 }
-
+/* This code sets the spacing between each bullet point in the contact me list. */
 .contact-content ul li a {
     margin: 15px
 }
-
+/* This code sets the color for when users hover over each contact option which will be cadet blue. */
 .contact-content a:hover {
     color: cadetblue;
 }
-
+/* This code is for the footer found at the bottom of the web page. The font is set to arial unless the browser does not recognize.
+It also aligns the footer to be centered. Margin top adds spacing between the footer and the contact me section. */
 .footer h3 {
     padding: 30px;
     text-align: center;    
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
-    clear: both;
+    /* clear: both; */
     margin-top: 100px;
 }
-
+/* This media query allows the webpage to be functional on a larger monitor screen if certain users access this through a desktop
+rather than a macbook or laptop. This was developed on a macbook pro so a media query is needed for functionality on larger 
+screens for users who only access website with a large screen desktop computer. */
 @media screen and (min-width:1450px) {
 .img-prj2,
 .img-prj3,
