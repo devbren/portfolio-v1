@@ -10,7 +10,8 @@ body {
     background-color: white;
 }
 
-/* This code represents the white header at the top of the site nav bar */
+/* This code represents the white header at the top of the site nav bar and its styling.
+Allows all elements to be arial font first, and also aligned on center for a clean and polished look. */
 .header {
     display: flex;
     align-items: center;
@@ -29,14 +30,16 @@ body {
     margin: 15px;
 }
   
-/* This code represents the nav bar links at the top right of the nav bar */
+/* This code represents the nav bar links at the top right of the nav bar. An unordered bullet list,
+however, bullet points are taken out for styling and personal taste. */
 .nav-bar ul {
     list-style-type: none;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
 }
-  
+
+/* This code specifically represents the thickness of the nav bar links font as well as the spacing between each word. */
 .nav-bar ul li a {
     float: right;
     font-weight: 600;
@@ -51,22 +54,24 @@ body {
     color: black;
 }
 
-/* This code allows the nav bar links to glow cade blue as the user hovers over each
-link before clicking */
+/* This code allows the nav bar links to glow cadet blue as the user hovers over each
+link before clicking. This color best matches the color scheme of the hero image. */
 .nav-bar a:hover {
     color: cadetblue;
 }
 
+/* This section targets all elements within the hero section of the page including,
+background image, headshot image, and text. */
 .hero {
     position: relative;
     display: flex;
-    flex-wrap: flex;
     background-size: cover;
     background-attachment: fixed;
     background-position: 40%;
     object-fit: cover;
 }
 
+/* This code sets the size for the pink cloud background image found in the hero section dividing the nav bar and the main section. */
 .hero-img {
     height: 750px;
     width: 100%;
@@ -74,7 +79,7 @@ link before clicking */
     margin-bottom: -2px;
     /* flex-wrap: flex; */
 }
-
+/* This code is for the words titled "hello, world." Not only does this set its font, but also sets its positioning. */
 .hero h2 {
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
@@ -84,7 +89,7 @@ link before clicking */
     font-size: 40px;
     flex-wrap: flex;
 }
-
+/* This code is for the words written "Welcome to my developer..." Not only does this set its font, but also sets its positioning. */
 .hero p {
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
@@ -94,7 +99,9 @@ link before clicking */
     font-size: 22px;
     flex-wrap: wrap;
 }
-
+/* This is my headshot also found in the hero section in order for employees to see what I look like. Makes things more personable.
+The headshot is different, not so professional, yet the blue beanie adds a nice touch of color to the color scheme.
+Also, that's my favorite beanie I own so I had to add it in there! */
 .headshot {
     border: 3px solid #2d2e32;
     height: 200px;
@@ -107,21 +114,26 @@ link before clicking */
     object-fit: cover;
     flex-wrap: wrap;
 }
-
+/* This code is for all header tags below h1 and sets their font style as well as color.
+In this case, the primary will be arial font with black color, unless the browser DOES NOT read arial; however,
+the color black is universal.  */
 h2, h3, h4{
     font-family: Arial, Helvetica, sans-serif;
     color: black;
 }
-
+/* This code set the font style for all links and paragraph tags to be black and font type arial.
+The primary will be arial font with black color, unless the browser DOES NOT read arial; however,
+the color black is universal.  */
 p, a {
     font-family: Arial, Helvetica, sans-serif;
     color: black;
 }
-
+/* This code is for whether or not each link tag found in the nav bar or contact me section will have 
+an underline or not. In this case, it DOES NOT have an underline since it is set to none. */
 a {
     text-decoration: none;
 }
-
+/* This code  */
 a:hover {
     color: black;
 }
