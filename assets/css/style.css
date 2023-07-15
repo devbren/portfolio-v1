@@ -84,7 +84,7 @@ background image, headshot image, and text. */
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
     position: absolute;
-    top: 42%;
+    top: 34%;
     left: 25%; 
     font-size: 40px;
     flex-wrap: flex;
@@ -95,7 +95,7 @@ background image, headshot image, and text. */
     display: flex;
     position: absolute;
     top: 49%;
-    left: 25%; 
+    left: 26%; 
     font-size: 22px;
     flex-wrap: wrap;
 }
@@ -114,6 +114,7 @@ Also, that's my favorite beanie I own so I had to add it in there! */
     object-fit: cover;
     flex-wrap: wrap;
 }
+
 /* This code is for all header tags below h1 and sets their font style as well as color.
 In this case, the primary will be arial font with black color, unless the browser DOES NOT read arial; however,
 the color black is universal.  */
@@ -200,6 +201,8 @@ said projects. They are the titles in cadet blue. The maring adds a bit of space
     margin-top: 50px;
 }
 /* This is the code for the first main project displayed in the works section.*/
+.work-section,
+.work-content,
 .img-prj1 {
     background-size: cover;
     width: 1120px;
@@ -210,17 +213,21 @@ said projects. They are the titles in cadet blue. The maring adds a bit of space
     margin-top: 20px;
 }
 /* These are the images that follow. Four smaller projects displayed and this code sets its sizing. */
+.work-section,
+.work-content,
 .img-prj2,
 .img-prj3,
 .img-prj4,
 .img-prj5 {
     background-size: cover;
-    width: 520px;
-    height: 320px;
+    width: 320px;
+    height: 220px;
     margin-bottom: 2%;
     /* border: 2px solid; */
     position: relative;
     margin-top: 20px;
+    flex-direction: row;
+    
 }
 /* This code allows a hover for the images and makes it interactive, allowing users to know that its functional. The hover color
 will be indian red to match color scheme. */
@@ -256,13 +263,48 @@ It also aligns the footer to be centered. Margin top adds spacing between the fo
     text-align: center;    
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
-    /* clear: both; */
+    clear: both;
     margin-top: 100px;
 }
+
 /* This media query allows the webpage to be functional on a larger monitor screen if certain users access this through a desktop
 rather than a macbook or laptop. This was developed on a macbook pro so a media query is needed for functionality on larger 
 screens for users who only access website with a large screen desktop computer. */
-@media screen and (min-width:1450px) {
+/* @media only screen and (max-width: 1450px) {
+
+    .hero h2 {
+        display: flex;
+        position: absolute;
+        margin-top: 60px;
+        left: 25%; 
+        font-size: 40px;
+        flex-wrap: flex;
+    }
+
+    .hero p {
+        font-family: Arial, Helvetica, sans-serif;
+        display: flex;
+        position: absolute;
+        top: 49%;
+        left: 25%; 
+        font-size: 22px;
+        flex-wrap: wrap;
+    }
+
+    .headshot {
+        border: 3px solid #2d2e32;
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+        display: flex;
+        top: 33%;
+        right: 30%; 
+        position: absolute;
+        object-fit: cover;
+        flex-wrap: wrap;
+    }
+
+
 .img-prj2,
 .img-prj3,
 .img-prj4,
@@ -276,21 +318,177 @@ screens for users who only access website with a large screen desktop computer. 
     width: 1120px;
     height: 750px;
     margin-bottom: 2%;
-    /* border: 2px solid; */
+    border: 2px solid;
     position: relative;
     margin-top: 20px;
 }
+} */
 
-.hero h2 {
-    left: 31%; 
-}
+/* This media query enables the website to be responsive on mobile devices. */
+/* @media only screen and (max-width: 768px) {
 
-.hero p {
-    left: 31%; 
-}
+    .nav-bar ul li a {
+        font-weight: 600;
+        font-size: 16px;
+    }
 
-.headshot {
-    right: 36%; 
-}
-}
+    .nav-bar ul {
+        margin-right: -385px;
+    }
 
+    .hero h2 {
+        margin-top: 35px;
+        margin-left: 100px; 
+        font-size: 35px;
+    }
+    
+    .hero p {
+        margin-top: 40px;
+        margin-left: 103px; 
+        font-size: 55px;       
+        position: absolute;
+    }
+
+    .hero-img {
+        height: 750px;
+        width: 150%;
+        object-fit: cover;
+        margin-bottom: -2px;
+    }
+    
+    .hero .headshot {
+        border: 3px solid #2d2e32;
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+        top: 38%;
+        right: -50px;
+        position: absolute;
+    }
+
+    .about-me-content, #about1, #about2, p {
+        font-size: 50px;
+        text-align: justify;
+        line-height: 23px;
+        margin: 0 -285px;
+        margin-left: 5px;
+    }
+
+    .img-prj2,
+    .img-prj3,
+    .img-prj4,
+    .img-prj5 {
+        width: 350px;
+        height: 220px;
+        flex-direction: column;
+        margin: 0 0 0 300px;
+        margin-top: 10px;
+        margin-bottom: 50px;
+        margin-right: 300px;
+    }
+    
+    .img-prj1 {
+        width: 500px;
+        height: 350px;
+        margin: 0 0 10px 300px;
+        margin-bottom: 50px;
+        margin-top: 10px;
+        flex-direction: column;
+    }
+    
+    .work-content h3, h4 {
+        margin: 0 0 0 300px;
+    }
+}  */
+    
+
+/* This media query enables the website to be responsive on tablet devices. */
+/* @media only screen and (max-width: 992px) {
+    .img-prj2,
+    .img-prj3,
+    .img-prj4,
+    .img-prj5 {
+        width: 350px;
+        height: 220px;
+        margin: 50px;
+    }
+    
+    .img-prj1 {
+        background-size: cover;
+        width: 500px;
+        height: 350px;
+        margin-bottom: 2%;
+        position: relative;
+        margin-top: 20px;
+    }
+    
+    .work-section, .work-content h3 {
+        color: cadetblue;
+        margin-top: 50px;
+    }
+
+    .hero h2 {
+        left: 31%; 
+    }
+    
+    .hero p {
+        left: 31%; 
+    }
+    
+    .headshot {
+        right: 36%; 
+    }
+
+    .about-me-content, #about1, #about2, p {
+        font-size: 14px;
+        text-align: justify;
+        line-height: 23px;
+        flex-wrap: wrap;
+        margin: 0 -150px;
+        margin-left: 5px;
+    }
+
+    .headshot {
+        border: 3px solid #2d2e32;
+        height: 180px;
+        width: 180px;
+        border-radius: 50%;
+        display: flex;
+        top: 37%;
+        right: 18%; 
+        position: absolute;
+        object-fit: cover;
+        flex-wrap: wrap;
+    }
+
+    .hero p {
+        font-family: Arial, Helvetica, sans-serif;
+        display: flex;
+        position: absolute;
+        top: 49%;
+        left: 23.75%; 
+        font-size: 16px;
+        flex-wrap: wrap;
+    }
+
+    .hero h2 {
+        font-family: Arial, Helvetica, sans-serif;
+        display: flex;
+        position: absolute;
+        top: 44%;
+        left: 24%; 
+        font-size: 35px;
+        flex-wrap: flex;
+    }
+
+    .nav-bar ul li a {
+        float: right;
+        font-weight: 600;
+        font-size: 16px;
+        color: black;
+        text-decoration: none;
+        margin: -10px;
+        margin-right: 45px;
+    }
+}
+     */
